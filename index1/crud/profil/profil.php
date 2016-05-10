@@ -27,27 +27,12 @@
         <td colspan="3"><button type="button" class="btn btn-success" onclick="editprofil();">Edit</button></td>
         </table>
       </div>
-      <div class="col-sm-4">
-        <b>SISWA</b>
+      <div class="col-sm-3">
+        <br>
+        <img src="./img/tut.png" width="70%">
       </div>
-      <div class="col-sm-2">
-      <b>USER</b>
-      <table class="table">
-      <td>ID USER</td><td>USER</td></tr>
-      <?php
-      $pdo=$amorpdo->prepare("select*from user");
-      $pdo->execute();
-      while($tampil=$pdo->fetch()){
-        $id=$tampil['id_user'];
-        $user=$tampil['username'];
-        $password=$tampil['password'];
-        $nama=$tampil['nama'];
-      ?>
-
-      <td><?php echo $id; ?></td>
-      <td><?php echo $user; ?></td></tr>
-        <?php } ?>
-      </table>
+      <div class="col-sm-3"><br>
+      <img src="./img/sd.png" width="100%">
       </div>
     </div>
   </div>
