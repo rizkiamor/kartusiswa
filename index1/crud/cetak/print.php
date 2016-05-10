@@ -16,9 +16,9 @@ $edit->execute();
 $edit=$edit->fetch();
 ?><center>
 
-<table border="1" background="../../depan.png">
+<table border="1" background="../../img/skat.png">
 
-<td><table border="0"><td width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../img/tut.png" width="65%"><td><td width=""><center><h3><b>SD NEGERI TEMAJI I<br>
+<td><table border="0" background="../../img/atas.png"><td width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../img/tut.png" width="65%"><td><td width=""><center><h3><b>SD NEGERI TEMAJI I<br>
 KARTU TANDA SISWA</b></h3></center></td><td width="10"></td><tr>
 <td></td></tr></table></td>
 <td rowspan="4" width="359"><img src="../../img/belakang.png" width=""></td></tr>
@@ -31,4 +31,11 @@ KARTU TANDA SISWA</b></h3></center></td><td width="10"></td><tr>
 <td width=""><td><div class="tab">JENIS KELAMIN</td><td width=""></td><td><div class="tab">:</td><td><div class="tab"><?php echo $edit['kelamin'];?></td></tr>
 <td width=""><td><div class="tab">ALAMAT</td><td width=""></td><td><div class="tab">:</td><td><div class="tab"><?php echo $edit['alamat'];?></td></tr>
 </table></td>
-<tr><td><center><div class="tab">@SDN TEMAJI 2016</center></td></tr></table></td>
+<tr><td><center><div class="tab">@SDN TEMAJI 2016</center></td></tr></table></td></table>
+<br>
+
+  <script>
+  //window.load = print_d();
+  //function print_d(){
+   }
+  </script>
