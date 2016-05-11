@@ -14,7 +14,7 @@ tbody{
   <section class="content-header">
     <ol class="breadcrumb">
       <li>
-        <button type="button" class="btn btn-danger pull-right""><i class="fa fa-print"></i><a href="crud/cetak/print_all.php" target="_blank"> Print All</a></button>
+        <button type="button" class="btn btn-danger pull-right""><i class="fa fa-print"></i><a href="crud/cetak/pri_all.php" target="_blank"> Print All</a></button>
         <div class="col-lg-5 pull-right">
          <div class="input-group">
            <span class="input-group-addon">
