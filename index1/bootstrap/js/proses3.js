@@ -62,6 +62,12 @@ function scr(){
 			var response="foto";
 			ajax(url,post,response);
 			}
+			function fedit(flihat){
+				var url="./crud/upload/escr.php";
+				var post="flihat="+flihat;
+				var response="foto";
+				ajax(url,post,response);
+				}
 		function lihatedit(klihat){
 			var url="./crud/cetak/lihatupload.php";
 			var post="klihat="+klihat;

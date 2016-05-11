@@ -15,6 +15,7 @@ $img=$image['foto'];
 $npsn1=$image['npsn'];
 ?>
 <br>
+<button type="button" class="btn btn-danger pull-right" onclick="fedit(this.value);" value="<?php echo $nis1; ?>"><i class="fa fa-edit"></i></button>
 <?php
 if ($img==null) {
   require_once("../upload/scr.php");

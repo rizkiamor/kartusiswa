@@ -117,7 +117,7 @@ include_once"header.php"; ?>
             ?>
               <tr>
               <td><a href="#" onclick="flihat(this.value);" value="cobalah" class="list-group-item"><?php echo $nama; ?></a></td>
-              <td><a href="#" class="list-group-item"><?php
+              <td width="15"><a href="#" class="list-group-item"><?php
               if ($foto==null) {
                 echo "kosong";
               }
@@ -129,7 +129,8 @@ include_once"header.php"; ?>
 
               <td style="width:50px;">
             <div class="btn-group">
-            <button type="button" class="btn btn-success" onclick="flihat(this.value);" value="<?php echo $nis; ?>">></button></a>
+            <button type="button" class="btn btn-success" onclick="flihat(this.value);" value="<?php echo $nis; ?>">></button>
+            </div>
             <?php } ?>
             </table>
           </div>
@@ -148,8 +149,7 @@ include_once"header.php"; ?>
               if(move_uploaded_file($pic_loc,$folder.$pic))
               {
                 $picture = 'upload_images/'.$pic;
-                echo '<center><img class="preview" width="50%" alt="" src="'.$picture.'" />';
-                echo $ni;
+                echo '<center><a href="form_upload.php"><img class="preview" width="50%" alt="" src="'.$picture.'" /></a>';
                 $foto_u=$amorpdo->prepare("UPDATE siswa SET
                  foto = '$picture'
                  WHERE nis='$ni'");
