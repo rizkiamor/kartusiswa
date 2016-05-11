@@ -1,6 +1,21 @@
 // JavaScript Document
 var xmlhttp;
 /* profil */
+function editprofil(){
+	var url="./crud/profil/edit.php?rand="+Math.random();
+	var post="";
+	ajax(url,post,"isi");
+	}
+	function simpanprofil(){
+		var np=document.getElementById("npsn").value;
+		var ai=document.getElementById("instansi1").value;
+		var na=document.getElementById("nama").value;
+		var al=document.getElementById("alamat").value;
+		var url='crud/profil/simpan.php';
+		var post='np='+np+"&ai="+ai+"&na="+na+"&al="+al;
+		ajax(url,post,"isi");
+			alert("Data Berhasil Disimpan");
+	}
 function cetak(){
 	var url="./crud/cetak/cetak.php?rand="+Math.random();
 	var post="";

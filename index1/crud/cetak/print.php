@@ -10,8 +10,8 @@
 </head>
 <?php
 require_once"../conn.php";
-//$kdedit=$_POST['klihat'];
-$edit=$amorpdo->prepare("select*from siswa where nis='003' ");
+$kdedit=$_POST['id'];
+$edit=$amorpdo->prepare("select*from siswa where nis='$kdedit' ");
 $edit->execute();
 $edit=$edit->fetch();
 ?><center>
@@ -34,8 +34,9 @@ KARTU TANDA SISWA</b></h3></center></td><td width="10"></td><tr>
 <tr><td><center><div class="tab">@SDN TEMAJI 2016</center></td></tr></table></td></table>
 <br>
 
-  <script>
-  //window.load = print_d();
-  //function print_d(){
-   }
-  </script>
+<script>
+ window.load = print_d();
+ function print_d(){
+ window.print();
+ }
+ </script>

@@ -186,11 +186,5 @@ include_once"header.php"; ?>
 <script src="dist/js/app.min.js"></script>
 <script src="bootstrap/js/proses3.js"></script>
 <script src="bootstrap/js/jquery.form.js"></script>
-<script>
-window.load = print_d();
-function print_d(){
-window.print();
-}
-</script>
 </body>
 </html>

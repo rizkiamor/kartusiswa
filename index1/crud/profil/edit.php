@@ -20,11 +20,11 @@
         $npsn=$npsn->fetch();
         ?>
         <table class="table">
-        <td>NPSN</td><td>:</td><td><?php echo $npsn['npsn']; ?></td><tr>
-        <td>INSTANSI<td>:</td></td><td><?php echo $npsn['instansi']; ?></td></tr><tr>
-        <td>NAMA SEKOLAH<td>:</td></td><td><?php echo $npsn['nama_sekolah']; ?></td></tr><tr>
-        <td>ALAMAT</td><td>:</td><td><?php echo $npsn['alamat']; ?></td></tr><tr>
-        <td colspan="3"><button type="button" class="btn btn-success" onclick="editprofil();">Edit</button></td>
+        <td>NPSN</td><td>:</td><td><input type="text" id="npsn" value="<?php echo $npsn['npsn']; ?>"></td><tr>
+        <td>INSTANSI<td>:</td></td><td><input type="text" id="instansi1" value="<?php echo $npsn['instansi']; ?>"></td></tr><tr>
+        <td>NAMA SEKOLAH<td>:</td></td><td><input type="text" id="nama" value="<?php echo $npsn['nama_sekolah']; ?>"></td></tr><tr>
+        <td>ALAMAT</td><td>:</td><td><input type="text" id="alamat" value="<?php echo $npsn['alamat']; ?>"></td></tr><tr>
+        <td colspan="3"><button type="button" class="btn btn-success" onclick="simpanprofil();">Simpan</button></td>
         </table>
       </div>
       <div class="col-sm-3">

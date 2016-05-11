@@ -7,8 +7,8 @@ $edit->execute();
 $edit=$edit->fetch();
 ?>
 <form class="" method="post" action="crud/cetak/print.php" target="_blank">
+<input type="hidden" name="id" value="<?php echo $kdedit;?>">
 <table border="1">
-
 <td><table border="0"><td width="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../index1/img/tut.png" width="65%"><td><td width="70%"><center><h2><b>SDN TEMAJI I<br>
 KARTU TANDA SISWA</b></h2></center></td><td width="10"></td><tr>
 <td></td></tr>
